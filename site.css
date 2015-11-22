@@ -1,4 +1,3 @@
-/* Demo site CSS. Not mobile first, not semantic, not optimized, made for 20 minutes, mess */
 html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section, figure {
   margin: 0;
   padding: 0; 
@@ -46,37 +45,17 @@ img {
   line-height: 29px;
   
 }
-
-
-
-.section--head p,
-.title-block p {
+.section--head p {
   color: #666;
 }
-
-
-
-
-.title-block p {
-  font-size: 19px;
-  line-height: 29px;
-}
-
-
-
-
 
 .section {
   width: 100%;
   margin-top: 176px;
 }
-.docs {
-  margin-top: 60px;
-}
 .section--head {
   margin: 0;
   background: #EEE;
-  /*background: linear-gradient(180deg, #eee 0%,#fff 100%);*/
   padding: 132px 0;
 }
 
@@ -86,25 +65,6 @@ img {
   margin: 24px auto;
   padding: 0 30px;
   position: relative;
-}
-
-.row--docs {
-  max-width: 960px;
-  padding-left: 210px;
-}
-.row--heading {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.row--footer {
-  text-align: center;
-  padding: 132px 0;
-}
-.row--wide {
-  max-width: 1000px;
-}
-.row--video {
-  max-width: 1160px;
 }
 
 .row--wide img {
@@ -120,53 +80,9 @@ img.img--with_border {
   margin-left: 212px;
 }
 
-
-
-
-/*.main-wrapper {
-  background: none;
-	width: 100%;
-  padding-top: 0;
-  
-}
-.content-wrap {
-  
-
-
-}*/
-
-
-/* clearfix */
-.row:after{
-  content: " "; 
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
 .row--large {
   margin-bottom: 48px;
 }
-
-
-.section--head h1 a {
-  vertical-align: super;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-/*p.intro {
-  margin-top: 24px;
-  font-size: 18px;
-  line-height: 24px;
-}*/
-
-
-
-
-
-
-
 .col-50 {
   width: 48%;
   float: left;
@@ -179,125 +95,6 @@ img.img--with_border {
   max-width: 100%;
   height: auto;
 }
-
-.style-select {
-  width: 100%;
-  float: left;
-}
-.style-select .radio {
-  position: relative;
-  margin-bottom: 12px;
-  display: block;
-  float: left;
-  width: 100%;
-}
-.style-select label {
-  padding-left: 24px;
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-.style-select input {
-  position: absolute;
-  left:0;
-  top:0;
-  width:24px;
-  height:24px;
-  overflow:hidden;
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  opacity:0;
-  cursor: pointer;
-  
-}
-.style-select input + label:before {
-  content: '';
-  position: absolute;
-  left:0;
-  top:4px;
-  background: none;
-  border-radius: 50%;
-  width:16px;
-  height:16px;
-  box-sizing: border-box;
-  border: 2px solid rgba(0,0,0,0.6);
-}
-.radio:hover label:before {
-  border-color: #3169B3;
-}
-.style-select input:checked + label:before {
-  border-color: #3169B3;
-}
-.style-select input:checked + label:after {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 9px;
-  width:6px;
-  height: 6px;
-  background: #3169B3;
-  border-radius: 50%;
-}
-
-/*.section--developers {
-  color: #FFF;
-  background: #222;
-  background: #1f1f1f;
-  padding: 80px 0;
-}
-.section--developers a {
-  color:#FFFFFF;
-}
-.section--developers p,
-.section--developers  ul.text-list {
-  color: #ddd;
-}
-.section--developers .section--head p,
-.section--developers .title-block p {
-  color: #ddd;
-}*/
-
-.row--modules ul {
-  list-style: none;
-  margin-left: 0;
-  /*color: rgba(255, 255, 255, 0.8);*/
-}
-.row--modules span {
-  font-wight:600;
-  border-left:5px solid #FFF;
-  padding-left:5px;
-  margin-left:-10px;
-}
-
-.size-chart {
-  width: 100%;
-  display: inline-block;
-}
-
-.size-chart div {
-  height: 21px;
-  float: left;
-  font-size: 13px;
-  padding: 4px;
-  line-height: 1;
-}
-
-.block__ui-separated {
-  position: relative;
-}
-.block__ui-separated .col-50 {
-  position: absolute;
-  left: 0;
-  top:12px;
-}
-.block__ui-separated img {
-  float: right;
-  max-width: 450px;
-}
-
-
 .demo-gallery {
   width: 100%;
   height: auto;
@@ -313,30 +110,11 @@ img.img--with_border {
   line-height: 0;
 }
 
-
-
 a.demo-gallery__img--main {
   width: auto;
   height: auto;
 }
 
-.ukraine-flag {
-  width: 21px;
-  height: 14px;
-  position: relative;
-  background: #ffcc00;
-  top: 1px;
-  display: inline-block;
-}
-.ukraine-flag:before {
- content:'';
- position: absolute;
- width: 21px;
- height: 7px;
- left:0;
- top:0;
- background: #0066cc;
-}
 
 .demo-gallery figure {
   display: none;
@@ -389,9 +167,6 @@ a.demo-gallery__img--main {
 
 
 @media screen and (max-width: 1000px) {
-
- 
-
   .row--wide {
     max-width: 800px;
   }
@@ -405,47 +180,20 @@ a.demo-gallery__img--main {
     margin-top: 132px;
   }
 
-  .row--docs {
-    max-width: 800px;
-    padding-left: 30px;
-
-  }
-  
   .section--head {
     margin-top:0;
     padding: 30px 0;
-  }
-
-  .docs {
-    margin-top: 48px;
-  }
-
-  .docs-menu {
-    position: relative;
-    margin: 15px 0;
-    left:0;
-    top:0;
-  }
-  .docs-menu  ul {
-    position: relative;
-  }
-  .docs-menu__ad {
-    display: none;
   }
 
   .row--nav {
     font-size: 24px;
     line-height: 1.1; 
   }
-
 }
 
 
 
 @media screen and (max-width: 650px) {
-   h1 {
-    font-size: 40px;
-  }
   .block__ui-separated .col-50 {
     position: relative;
     top: 0;
@@ -473,12 +221,6 @@ a.demo-gallery__img--main {
   .row {
     padding: 0 18px;
   }
-  .docs .highlight,
-  .codepen-embed {
-    padding-left: 18px;
-    padding-right: 18px;
-    margin-left: -18px;
-  }
   .section {
     margin-top: 88px;
   }
@@ -489,20 +231,9 @@ a.demo-gallery__img--main {
     margin-top:0;
     padding: 24px 0;
   }
-  .row--nav {
-    font-size: 18px;
-    line-height: 26px; 
-  }
-
-
 }
 
 @media screen and (max-width: 700px) {
-
-  .row--nav {
-    font-size: 18px;
-    line-height: 26px; 
-  }
 
   .demo-gallery {
     max-width: 500px;
@@ -514,23 +245,7 @@ a.demo-gallery__img--main {
   a.demo-gallery__img--main {
     width: 164px;
   }
-  .section--head p {
-    font-size: 18px;
-    line-height: 24px;
-  }
 }
-
-/*@media screen and (max-width: 490px) {
-  .demo-gallery a {
-    width: 100px;
-    margin: 0 4px 4px 0;
-  }
-  a.demo-gallery__img--main {
-    width: 137px;
-  }
-}
-*/
-
 
 @media screen and (max-width: 450px) {
   .demo-gallery a {
@@ -546,7 +261,7 @@ a.demo-gallery__img--main {
 @media screen and (max-width: 350px) {
   .demo-gallery a {
     width: 81px;
-margin: 0 1px 1px 0;
+    margin: 0 1px 1px 0;
   }
   a.demo-gallery__img--main {
     width: 109px;
