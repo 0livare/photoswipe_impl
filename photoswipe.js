@@ -203,25 +203,6 @@ photoswipe.open = function(index, galleryElement, disableAnimation, fromURL) {
 		return;
 	}
 
-	var radios = document.getElementsByName('gallery-style');
-	for (var i = 0, length = radios.length; i < length; i++) {
-		if (radios[i].checked) {
-			if(radios[i].id == 'radio-all-controls') {
-
-			} else if(radios[i].id == 'radio-minimal-black') {
-				options.mainClass = 'pswp--minimal--dark';
-				options.barsSize = {top:0,bottom:0};
-				options.captionEl = false;
-				options.fullscreenEl = false;
-				options.shareEl = false;
-				options.bgOpacity = 0.85;
-				options.tapToClose = true;
-				options.tapToToggleControls = false;
-			}
-			break;
-		}
-	}
-
 	if(disableAnimation) {
 		options.showAnimationDuration = 0;
 	}

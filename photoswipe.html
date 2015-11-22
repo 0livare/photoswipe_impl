@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 
-<html 
-	lang="en" 
-	prefix="og: http://ogp.me/ns#" 
-	debug="true">
+<html lang="en" prefix="og: http://ogp.me/ns#" debug="true">
 
 <head>
 	<title>PhotoSwipe: Responsive JavaScript Image Gallery</title>
 
-	<link href="./photoswipe_files/site.css" rel="stylesheet">
-	<link href="./photoswipe_files/photoswipe.css" rel="stylesheet">
-	<link href="./photoswipe_files/default-skin.css" rel="stylesheet">
+	<link href="./site.css" rel="stylesheet">
+	<link href="./photoswipe.css" rel="stylesheet">
+	<link href="./default-skin.css" rel="stylesheet">
 
 	<script src="./dist/photoswipe.js"></script>
 	<script src="./dist/photoswipe-ui-default.js"></script>
@@ -22,22 +19,16 @@
 
 	<div class="section section--head">
 
-		<div class="row row--heading">
-			<h1>PhotoSwipe<a href="https://github.com/dimsemenov/PhotoSwipe/releases"> v4.1.0</a></h1>
-			<p>JavaScript gallery, no dependencies.</p>
-		</div>
-
 		<div class="row">
 			<div id="demo-test-gallery" class="demo-gallery" data-pswp-uid="1">
 
-				<a 	href="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg" 
-					data-size="1600x1600" 
-					data-med="https://farm4.staticflickr.com/3894/15008518202_b016d7d289_b.jpg" 
-					data-med-size="1024x1024" 
-					data-author="Folkert Gorter" 
+				<a 	href="https://farm6.staticflickr.com/5789/22569131534_3df0b04b96_k.jpg" 
+					data-size="2048x1612" 
+					data-author="Zach Posten" 
 					class="demo-gallery__img--main">
-					<img src="./photoswipe_files/15008518202_b016d7d289_m.jpg" alt="">
-					<figure>This is dummy caption.</figure>
+					<!-- <img class="lucy" src="https://farm6.staticflickr.com/5789/22569131534_413dc32383_n.jpg" alt="test" style="max-height: 200px; height: 100%; width: auto; max-width: 500px;"> -->
+					<img class="lucy" src="https://farm6.staticflickr.com/5789/22569131534_413dc32383_n.jpg" alt="test" style="max-width: 200px; width: 100%; height: auto;">
+					<figure>Lucy</figure>
 				</a>
 
 
@@ -46,7 +37,7 @@
 					data-med="https://farm4.staticflickr.com/3920/15008465772_383e697089_b.jpg" 
 					data-med-size="1024x683" 
 					data-author="Thomas Lefebvre">
-					<img src="./photoswipe_files/15008465772_383e697089_m.jpg" alt="">
+					<img src="./photoswipe_files/15008465772_383e697089_m.jpg" alt="" width="100">
 					<figure>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</figure>
 				</a>
 				
@@ -64,9 +55,9 @@
 				<a 	href="https://farm4.staticflickr.com/3902/14985871946_24f47d4b53_h.jpg" 
 					data-size="1600x1067" 
 					data-med="https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg" 
-					data-med-size="1024x683" 
+					data-med-size="300x683" 
 					data-author="Ales Krivec">
-					<img src="./photoswipe_files/14985871946_86abb8c56f_m.jpg" alt="">
+					<img src="http://exmoorpet.com/wp-content/uploads/2012/08/cat.png" alt="">
 					<figure>This is dummy caption. It is not meant to be read.</figure>
 				</a>
 
@@ -80,29 +71,6 @@
 					<figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
 				</a>
 
-			</div>
-			<!-- <figure class="demo-gallery__title">Demo gallery &middot; 5 photos</figure> -->
-
-			<div class="style-select">
-				<p style="margin:24px 0 12px;color:#444;">Demo gallery style</p>
-
-				<div class="radio">
-					<input type="radio" name="gallery-style" value="all" id="radio-all-controls" checked="">
-					<label for="radio-all-controls">
-						
-						All controls<br>
-						<span>caption, share and fullscreen buttons, tap to toggle controls</span>
-					</label>
-				</div>
-
-				<div class="radio">
-					<input type="radio" name="gallery-style" value="minimal" id="radio-minimal-black">
-					<label for="radio-minimal-black">
-						
-						Minimal<br>
-						<span>no caption, transparent background, tap to close</span>
-					</label>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -157,7 +125,11 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
+
+
+
 
 
 </body>
